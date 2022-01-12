@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#menu li{
+    display: inline;
+    padding: 0 1rem;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #fcf7f7;
+    font-size: 2rem;
+}
+
+#menu li a:hover{
+    color:aqua;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(to right, #000000, #434343);
+    display: flex;
+    align-items: center;
+}
+
+body { 
+    background: linear-gradient(to right, #232526, #414345);
+    font-family: "Heebo";
+}
+
+.logo{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color: #ffff;
+}
+
+.banner img{
+    position: absolute;
+    height: 85vh;
+    width: 100%;
+}
+
+#sobre {
+      position: relative;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cortes h1{
+   text-align: center;
+   font-size: 4rem;
+   margin: 1rem 0;
+}
+
+.corte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.corte p{
+    width: 60%;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+
+footer{
+    background: linear-gradient(to right, #000000, #434343);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    color: #fff;
+}
