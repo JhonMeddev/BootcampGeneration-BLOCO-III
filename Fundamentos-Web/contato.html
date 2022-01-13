@@ -28,33 +28,34 @@
 
 
     <div class="contato">
-
-    
-    
+        
         <form>
-          <label for="nome">Nome:</label> <br>
-          <input type="text"id="nome">
-          <br>
-          <br>
-          <label for="email">Email:</label> <br>
-          <input type="text"id="email">
-          <br>
-          <br>
-          <label for="assunto">Assunto:</label> <br>
-          <textarea name="" id="" cols="50" rows="5"></textarea>
-          <br>
-          <br>
-          <button>Enviar</button>
-        </form>
-    
+            <label for="nome">Nome:</label> <br>
+            <input type="text"id="nome" onkeyup='validaNome()'>
+            <div id="txtNome"></div>
+            <br>
+            <label for="email">Email:</label> <br>
+            <input type="text"id="email" onkeyup='validaEmail()'>
+            <div id="txtEmail"></div>
+            <br>
+            <label for="assunto">Assunto:</label> <br>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+            <div id="txtAssunto"></div>
+            <br>
+            <button onclick='enviar()'>Enviar</button>
+          </form>   
+        
+
         <div>
             <h2>Endereço:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14622.827813089016!2d-46.68615156003398!3d-23.614840493648355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50a464c9eef5%3A0xd5ecc13c984b1975!2sBrooklin%20Novo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004615-000!5e0!3m2!1spt-BR!2sbr!4v1641948956516!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29244.59394054325!2d-46.69919007975261!3d-23.619597547433298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c41e1f4a69%3A0xd6647ce6199694da!2sCond.%20Helbor%20Infinite!5e0!3m2!1spt-BR!2sbr!4v1642029300398!5m2!1spt-BR!2sbr" width="600" height="450"  loading="lazy" onmousemove='mapaZoom()' onmouseout='mapaNormal()' id="mapa"></iframe>
         </div>
     </div>
 
     <footer>
         <h3>Todos os direitos reservados: Jhonatan Medeiros &copy</h3>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
